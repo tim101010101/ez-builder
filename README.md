@@ -2,10 +2,6 @@
 
 快速将 md 文档转化成一个基于 vue 的前端页面
 
-## 技术栈
-
-ts + tsc + vue3 + naive-ui + vite + jest
-
 ## 使用方式
 
 + 项目根目录下创建 docs 文件夹，用来储存写好的 md 文档
