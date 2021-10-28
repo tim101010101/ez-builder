@@ -2,7 +2,7 @@ import { regs } from '../types/regs';
 
 export const Regs: regs = {
   // text
-  p: /^((?<!(\#|\+)).)+?$/,
+  p: /^[^\#\+][^\s].+/,
   // # x
   h1: /(?<=(^\#\s))(.*)/,
   // ## x
