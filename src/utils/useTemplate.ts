@@ -169,7 +169,7 @@ export const getRouterTemplate = (routeContent: string): string => {
 
 export const getHTMLTemplate = (
   pageName: string = 'Vite App',
-  srcPath: string = '/main/main.js',
+  srcPath: string = '/src/main.js',
 ): string => {
   return `<!DOCTYPE html>
   <html lang="en">

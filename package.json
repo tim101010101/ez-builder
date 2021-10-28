@@ -4,9 +4,10 @@
   "description": "Build a vue-based documentation website whit md documentation quickly and easily",
   "main": "./dist/index.js",
   "scripts": {
+    "start": "tsc && node ./dist/index.js && cd ./web && cnpm install && npm run dev",
+    "parse": "tsc && node ./dist/index.js",
     "test": "jest",
-    "test:coverage": "jest --coverage",
-    "parse": "tsc && node ./dist/index.js"
+    "test:coverage": "jest --coverage"
   },
   "keywords": [
     "markdown",

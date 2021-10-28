@@ -20,12 +20,12 @@ export const initProject = async () => {
   console.log('Start to initialize the project...');
 
   const rootPath = slicePath('../../web');
-  const mainPath = slice(rootPath, 'main');
-  const routePath = slice(mainPath, 'route');
-  const viewsPath = slice(mainPath, 'views');
+  const srcPath = slice(rootPath, 'src');
+  const routePath = slice(srcPath, 'route');
+  const viewsPath = slice(srcPath, 'views');
 
   await createDir(rootPath);
-  await createDir(mainPath);
+  await createDir(srcPath);
   await createDir(routePath);
   await createDir(viewsPath);
 
@@ -35,7 +35,7 @@ export const initProject = async () => {
   await createFile(slice(rootPath, 'package.json'), getPackageTemplate());
   await createFile(slice(rootPath, 'index.html'), getHTMLTemplate());
   await createFile(slice(rootPath, 'vite.config.js'), getViteConfigTemplate());
-  await createFile(slice(mainPath, 'main.js'), getMainTemplate());
+  await createFile(slice(srcPath, 'main.js'), getMainTemplate());
 
   console.log('Start to parse md documents...');
 
@@ -47,7 +47,7 @@ export const initProject = async () => {
   const { menuOptions, routes } = getParams(fileNameArr);
 
   // create App.vue
-  await createFile(slice(mainPath, 'App.vue'), getAppTemplate(menuOptions));
+  await createFile(slice(srcPath, 'App.vue'), getAppTemplate(menuOptions));
 
   // create route/index.js
   await createFile(slice(routePath, 'index.js'), getRouterTemplate(routes));

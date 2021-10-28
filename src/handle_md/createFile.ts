@@ -9,7 +9,7 @@ export const createPage = async (
 ) => {
   const curName = fileName.slice(0, -3);
   await createFile(
-    `${outDir}/main/views/${curName}.vue`,
+    `${outDir}/src/views/${curName}.vue`,
     getVueTemplate(curName, text),
   );
 };
