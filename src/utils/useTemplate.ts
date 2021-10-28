@@ -38,7 +38,7 @@ export const getAppTemplate = (
          <n-layout-sider>
            <n-menu :options="menuOptions"/>
          </n-layout-sider>
-         <n-layout-content :native-scrollbar="false" content-style="padding: 40px;" >
+         <n-layout-content :native-scrollbar="false" content-style="padding: 40px 200px;" >
            <router-view />
          </n-layout-content>
        </n-layout>
