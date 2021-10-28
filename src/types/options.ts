@@ -1,17 +1,18 @@
-export type menuOptions = Array<menu>;
+export type params = {
+  routes: string;
+  menuOptions: string;
+};
 
-type menu = {
+export type menuOptions = Array<{
   key: string;
   label: string;
   disabled?: boolean;
-  children?: Array<menu>;
-};
+  children?: Array<menuOptions>;
+}>;
 
-export type routerOptions = Array<route>;
-
-type route = {
+export type routerOptions = Array<{
   path: string;
   component: Function;
   redirect?: string;
-  children?: Array<route>;
-};
+  children?: routerOptions;
+}>;

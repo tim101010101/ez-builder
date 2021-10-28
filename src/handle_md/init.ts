@@ -1,4 +1,4 @@
-import { params } from '../types/param';
+import { params } from '../types/options';
 
 import {
   slice,
