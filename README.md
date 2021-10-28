@@ -8,22 +8,7 @@
 + 编译
 
 ```shell
-npm run parse
-```
-
-+ 进入产生的 web 文件夹
-+ 安装依赖
-
-```shell
-npm install
-or
-yarn
-```
-
-+ 运行项目
-
-```shell
-npm run dev
+npm run start
 ```
 
 ## 未来支持
