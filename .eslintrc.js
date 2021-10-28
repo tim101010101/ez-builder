@@ -2,15 +2,15 @@ module.exports = {
   env: {
     browser: false,
     commonjs: true,
-    es6: true
+    es6: true,
   },
   extends: 'eslint:recommended',
   parserOptions: {
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
-      jsx: true
+      jsx: true,
     },
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: ['react', 'prettier'],
   rules: {
@@ -21,13 +21,13 @@ module.exports = {
       {
         singleline: {
           max: 10,
-          allowFirstLine: true
+          allowFirstLine: true,
         },
         multiline: {
           max: 1,
-          allowFirstLine: false
-        }
-      }
+          allowFirstLine: false,
+        },
+      },
     ],
     // 关闭：强制自闭式标签
     'vue/html-self-closing': 'off',
@@ -43,8 +43,8 @@ module.exports = {
       'error',
       {
         before: true,
-        after: true
-      }
+        after: true,
+      },
     ],
     // 在打开块之后和关闭块之前加空格
     'block-spacing': ['error', 'always'],
@@ -68,8 +68,8 @@ module.exports = {
     'no-multiple-empty-lines': [
       2,
       {
-        max: 1
-      }
+        max: 1,
+      },
     ],
     // 禁止尾随空格
     'no-trailing-spaces': 2,
@@ -78,8 +78,8 @@ module.exports = {
       2,
       {
         vars: 'all',
-        args: 'none'
-      }
+        args: 'none',
+      },
     ],
     // 禁止没必要的计算属性
     'no-useless-computed-key': 2,
@@ -106,8 +106,8 @@ module.exports = {
       'error',
       {
         words: true,
-        nonwords: false
-      }
+        nonwords: false,
+      },
     ],
     // 比较NaN时 需要调用isNaN()
     'use-isnan': 'error',
@@ -116,10 +116,10 @@ module.exports = {
       'error',
       'always',
       {
-        objectsInObjects: false
-      }
+        objectsInObjects: false,
+      },
     ],
     // 数组括号间距
-    'array-bracket-spacing': [2, 'never']
-  }
+    'array-bracket-spacing': [2, 'never'],
+  },
 };

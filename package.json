@@ -13,7 +13,7 @@
     "markdown",
     "vue"
   ],
-  "author": "",
+  "author": "tim10101",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^27.0.2",
